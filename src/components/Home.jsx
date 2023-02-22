@@ -17,7 +17,7 @@ const Home = () => {
                 </p>
                 <div className='text-center flex-row'>
                 <a className = 'pr-5' href="https://docs.google.com/document/d/e/2PACX-1vRFC-5BBqbX6b1VJ0uXgcmrDTw5pCQeqAUIP_Mevr7YvOUpHd66zyT8GsZlS22L-g/pub" rel="noreferrer" target="_blank"><button className='border p-2 md:text-[2.5vmin] rounded-lg bg-gradient-to-r from-cyan-500 to to-blue-500 duration-200 hover:scale-125'>Resume</button></a>
-                <a href="www.linkedin.com/in/akintola-oyetayo25" rel="noreferrer" target="_blank"><button className='border p-2 md:text-[2.5vmin] rounded-lg bg-gradient-to-r from-cyan-500 to to-blue-500 duration-200 hover:scale-125'>LinkedIn</button></a>
+                <a href="https://linkedin.com/in/akintola-oyetayo25" rel="noreferrer" target="_blank"><button className='border p-2 md:text-[2.5vmin] rounded-lg bg-gradient-to-r from-cyan-500 to to-blue-500 duration-200 hover:scale-125'>LinkedIn</button></a>
                 </div>
             </div>
         </div>
