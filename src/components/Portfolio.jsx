@@ -12,29 +12,34 @@ const Portfolio = () => {
     
         {
         id: 1,
+        name:'entertainment-center',
         image: entertainment,
         link: 'https://boltluna.io/entertainment/',
         website: "https://github.com/Akintola97/entertainment-search.git"},
         {
         id: 2,
+        name:'gaming-magazine',
         image: gaming,
         link: 'https://boltluna.io/gaming',
         website: "https://github.com/Akintola97/IRIS.git"
          },
         {
         id: 3,
+        name:'marvel-search',
         image: marvel,
         link: 'https://boltluna.io/marvel',
         website: "https://github.com/Akintola97/marvel-app.git"
          },
         {
         id: 4,
+        name:'netflix-clone',
         image: netflix,
         link:'https://boltluna.io/netflix/',
         website: "https://github.com/Akintola97/netflix-clone.git"
          },
         {
         id: 5,
+        name: 'news',
         image: news,
         link: 'https://news-project.onrender.com/',
         website: "https://github.com/Akintola97/news-project.git"
@@ -42,6 +47,7 @@ const Portfolio = () => {
          },
         {
         id: 6,
+        name:'weather-search',
         image: weather,
         link: 'https://weather-app-62ae.onrender.com',
         website: "https://github.com/Akintola97/weather-node.git"
@@ -53,30 +59,35 @@ const Portfolio = () => {
 
   return (
     <>
-    <div name='portfolio' className='w-full h-full bg-gradient-to-b from-black to-gray-800 text-white md:h-screen'>
-        <div className='max-w-screen-lg p-10 mx-auto flex flex-col justify-center items-center w-full h-full'>
-        <div className='pb-8'>
-            <h1 className='text-center text-[6vmin] font-bold'>Portfolio</h1>
-            <p className='md:text-[4vmin] text-[3.5vmin] py-6'>Here are a couple of my personal projects</p>
-        </div>
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:px-0 px-12'>
-            {images.map((projects)=>{
-               return (
-               <div className= 'shadow-md shadow-gray-600 rounded-lg'>
-               <img src={projects.image} className='rounded-md' alt=''/>
-               <div className = 'flex items-center justify-center'>
-              <a href={projects.link} rel="noreferrer" target="_blank"><button className='w-1/2 px-5 py-3 m-4 duration-200 hover:scale-125'>Demo</button></a>
-              <a href={projects.website} rel="noreferrer" target="_blank"><button className='w-1/2 px-5 py-3 m-4 duration-200 hover:scale-125'>Code</button></a>
+   <div name = 'portfolio' className='w-full h-[100vh] bg-gradient-to-b from-black to-gray-800 text-white'>
+    <div className='flex flex-col text-white justify-center items-center w-full h-full'>
+  <h1 className='text-[6vmin] font-bold capitalize'>Portfolio</h1>
+  <p className='py-5 text-[3.5vmin]'>Here are a couple of my personal projects</p>
+  <div className='flex flex-wrap justify-center text-center'>
+  {images.map((projects)=>{
+       return( 
+        <>
+       <div className='shadow-gray-600 mr-5 mt-5 shadow-md rounded-lg'>
+       <img className='w-[30vmin] lg:[50vmin] p-4 rounded-md'  src={projects.image} alt={projects.name}/>
+                <div className='flex justify-evenly p-2 mb-5'>
+                <a href={projects.link} rel="noreferrer" target="_blank"
+                className='text-[2vmin]'
+                ><button className='border p-1.5 rounded-3xl bg-gradient-to-r from-cyan-500 to to-blue-500 duration-200 hover:scale-110'>Demo</button></a>
+                <a href={projects.website} rel="noreferrer" target="_blank"
+                className='text-[2vmin]'
+                >
+                <button className='border p-1.5 rounded-3xl bg-gradient-to-r from-cyan-500 to to-blue-500 duration-200 hover:scale-110'>Code</button></a>
                 </div>
-                </div>
-               
-            )})}
+                
+       </div>
+       </>
+      )})}
+  </div>
      
-        </div>
-        </div>
-       
     </div>
-   
+ 
+    
+   </div>
     </>
   )
 }

@@ -27,10 +27,10 @@ const Nav = () => {
     </div>
     <ul className='hidden md:flex'>
         {links.map((tabs)=>{
-            return <li key={tabs.id} className='cursor-pointer p-5 capitalize text-white font-[3vmin] hover:scale-105 duration-200'><Link to = {tabs.link} smooth='true' duration={500}>{tabs.link}</Link></li>
+            return <li key={tabs.id} className='cursor-pointer p-5 capitalize text-white text-[2.5vmin] hover:scale-105 duration-200'><Link to = {tabs.link} smooth='true' duration={500}>{tabs.link}</Link></li>
         })}
     </ul>
-        <div onClick={()=>setBars(!bars)} className='cursor-pointer p-5 z-10 md:hidden'>
+        <div onClick={()=>setBars(!bars)} className='cursor-pointer  z-10 md:hidden'>
             {bars ? <FaTimes size={30} /> :  <FaBars size={30} /> }
         </div>
 
