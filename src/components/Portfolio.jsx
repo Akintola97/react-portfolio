@@ -28,7 +28,7 @@ const Portfolio = () => {
         name:'marvel',
         image: marvel,
         link: 'https://boltluna.io/marvel',
-        website: "https://github.com/Akintola97/marvel-app.git"
+        website: "https://github.com/Akintola97/marvel-yt.git"
          },
         {
         id: 4,
