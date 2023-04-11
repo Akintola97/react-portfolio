@@ -49,7 +49,7 @@ const Portfolio = () => {
         id: 6,
         name:'weather',
         image: weather,
-        link: 'https://weather-app-62ae.onrender.com',
+        link: 'https://boltluna.io/weather',
         website: "https://github.com/Akintola97/weather-node.git"
          }
 
