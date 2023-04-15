@@ -41,8 +41,8 @@ const Portfolio = () => {
         id: 5,
         name: 'news',
         image: news,
-        link: 'https://news-project.onrender.com/',
-        website: "https://github.com/Akintola97/news-project.git"
+        link: 'https://boltluna.io/news',
+        website: "https://github.com/Akintola97/news-yt.git"
 
          },
         {
